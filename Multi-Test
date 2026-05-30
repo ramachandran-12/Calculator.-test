@@ -1,0 +1,45 @@
+package practiceproblems;
+
+import java.util.Scanner;
+
+public class Calculator {
+	//create static method and non-sttic methods with add and sub using scanner class
+	
+	public static int add(int a, int b) {
+		int result = a*b;
+		return  result;
+	}
+	
+	public void multiply(int a, int b) {
+		int result=a * b;
+		System.out.println("The Multiply result is " +result);
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number of ");
+		int a1 = sc.nextInt();
+		System.out.println("Enter the number of");
+		int b2 = sc.nextInt();
+		int end = Calculator.add(a1,b2);
+		System.out.println("The end of the add is " +end);
+		System.out.println("NExt--------------------------------------");
+		System.out.println("Enter the number of");
+		int a2 = sc.nextInt();
+		System.out.println("Enter the number of");
+		int b3 = sc.nextInt();
+		Calculator obj = new Calculator();
+		obj.multiply(a2, b3);
+		
+		
+		
+		
+		
+
+	}
+
+}
