@@ -1,0 +1,49 @@
+package practiceproblems;
+
+import java.util.Scanner;
+
+public class SimpleCalcul {
+	int x;
+	int y;
+	int z;
+	int a;
+	int result1;
+	
+	static int result;
+	
+	SimpleCalcul(int x,int y,int z){
+		this.x =x;
+		this.y=y;
+		this.z=z;
+		this.result=result;
+	}
+	public void add() {
+		result = x+y+z;
+		System.out.println("The add result is " +result);
+	}
+	public void add(int x,int y,int z, int a) {
+		result = x+y+z+a;
+		System.out.println("The add result is " +result);
+	}
+	static void add (int x, int y) {
+		result = x+y;
+		System.out.println("The add result is " +result);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		SimpleCalcul obj = new SimpleCalcul(2,2,2);
+		obj.add();
+		obj.add(10, 20, 30, 40);
+		System.out.println("Enter the number");
+		Scanner sc = new Scanner(System.in);
+		int x =sc.nextInt();
+		System.out.println("Enter the number");
+		int y = sc.nextInt();
+		SimpleCalcul.add(x, y);
+		
+		
+
+	}
+
+}
